@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 
 import com.shangwf.app.databinding.DbActivityMainBinding;
 import com.shangwf.app.utils.CornerUtils;
+import com.shangwf.app.utils.DensityUtils;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -13,6 +14,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         final DbActivityMainBinding binding = DataBindingUtil.setContentView(this, R.layout.db_activity_main);
-        binding.setBackground(CornerUtils.cornerDrawable(getResources().getColor(R.color.colorAccent),5));
+        binding.setBackground(CornerUtils.cornerDrawable(getResources().getColor(R.color.colorAccent), DensityUtils.dp2px(this,5)));
     }
 }
