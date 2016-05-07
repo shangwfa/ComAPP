@@ -34,7 +34,7 @@ public class SharedPreferencesHelper {
 
     public long getLongValue(String key) {
         if (key != null && !key.equals("")) {
-            return sp.getLong(key, 0);
+            return sp.getLong(key, -1);
         }
         return 0;
     }
