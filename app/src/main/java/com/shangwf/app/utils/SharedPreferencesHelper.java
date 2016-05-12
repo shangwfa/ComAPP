@@ -32,23 +32,23 @@ public class SharedPreferencesHelper {
         editor = sp.edit();
     }
 
-    public long getLongValue(String key) {
+    public long getLongValue(String key,long defaultValue) {
         if (key != null && !key.equals("")) {
-            return sp.getLong(key, -1);
+            return sp.getLong(key, defaultValue);
         }
         return 0;
     }
 
-    public String getStringValue(String key) {
+    public String getStringValue(String key,String defaultValue) {
         if (key != null && !key.equals("")) {
-            return sp.getString(key, null);
+            return sp.getString(key, defaultValue);
         }
         return null;
     }
 
-    public int getIntValue(String key) {
+    public int getIntValue(String key,int defaultValue) {
         if (key != null && !key.equals("")) {
-            return sp.getInt(key, 0);
+            return sp.getInt(key, defaultValue);
         }
         return 0;
     }
@@ -60,16 +60,16 @@ public class SharedPreferencesHelper {
         }
         return 0;
     }
-    public boolean getBooleanValue(String key) {
+    public boolean getBooleanValue(String key,boolean defaultValue) {
         if (key != null && !key.equals("")) {
-            return sp.getBoolean(key, false);
+            return sp.getBoolean(key, defaultValue);
         }
         return true;
     }
 
-    public float getFloatValue(String key) {
+    public float getFloatValue(String key,float defaultValue) {
         if (key != null && !key.equals("")) {
-            return sp.getFloat(key, 0);
+            return sp.getFloat(key, defaultValue);
         }
         return 0;
     }

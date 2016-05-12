@@ -20,4 +20,22 @@
         <item name="android:activityCloseExitAnimation">@anim/anim_activity_over</item>
         <item name="android:activityOpenExitAnimation">@anim/anim_activity_open_exit</item>
     </style>
+
+    <!-- 加载滚动条样式 -->
+    <style name="loading">
+        <item name="android:indeterminate">true</item>
+        <item name="android:indeterminateDrawable">@drawable/progress_loading</item>
+        <item name="android:indeterminateDuration">1000</item>
+        <item name="android:indeterminateOnly">true</item>
+    </style>
+
+
+
+    <!--==================light theme==================-->
+    <style name="LightTheme.Base" parent="AppTheme.Base">
+        <item name="colorPrimary">@color/light_principle</item>
+        <item name="colorPrimaryDark">@color/light_state_bar</item>
+        <item name="android:listDivider">@color/light_divider</item>
+    </style>
+
 </resources>
